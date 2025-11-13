@@ -3,9 +3,12 @@ const { data } = Astro.props;
 ---
 
 <article>
-  <h2 class="title">{data.productdisplayname}</h2>
-  <img src=`https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp` alt="" />
-  <p class="price-container">{data.price},-</p>
+  <h2 class="title">{data.firstname}</h2>
+  <img
+    src=`https://kupgmemrqcbimvzjdhok.supabase.co/storage/v1/object/public/people/${data.image}`
+    alt=""
+  />
+  <p class="price-container">{data.mobile}</p>
 </article>
 
 <style>
