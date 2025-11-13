@@ -1,8 +1,42 @@
-<header>
-  <div>LOGO</div>
+<header class="navbar">
+  <a href="index.html"><h1 class="logo">Fashion<span>R</span>Us</h1></a>
   <nav>
     <a href="/">Home</a>
     <a href="/products">Products</a>
     <a href="/about">About us</a>
   </nav>
 </header>
+
+<style>
+  nav {
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .navbar h1 {
+    margin-left: 50px;
+    color: black;
+    letter-spacing: -0.2rem;
+    line-height: 1;
+    font-weight: bolder;
+    font-size: 60px;
+  }
+  .navbar h1 span {
+    display: inline-block;
+    transform: scaleX(-1) translateX(-0.2rem);
+    color: red;
+    letter-spacing: -0.2rem;
+  }
+
+  .navbar a {
+    text-decoration: none;
+  }
+</style>

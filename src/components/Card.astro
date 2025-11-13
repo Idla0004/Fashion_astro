@@ -3,14 +3,36 @@ const { data } = Astro.props;
 ---
 
 <article>
-  <h2>{data.productdisplayname}</h2>
-  <p>{data.price},-</p>
+  <h2 class="title">{data.productdisplayname}</h2>
   <img src=`https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp` alt="" />
+  <p class="price-container">{data.price},-</p>
 </article>
 
 <style>
   img {
-    max-width: 100%;
-    height: auto;
+    display: block;
+    width: 200px;
+    max-height: fit-content;
+    object-fit: contain;
+    border-radius: 5px;
+    margin: 0 auto 0px;
+  }
+  .title {
+    font-size: 15px;
+    color: rgba(29, 29, 29, 0.762);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
   }
 </style>
