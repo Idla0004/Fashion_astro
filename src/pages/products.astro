@@ -1,18 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
-const endpoint =
-  "https://kupgmemrqcbimvzjdhok.supabase.co/rest/v1/People?select=*";
-const key =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt1cGdtZW1ycWNiaW12empkaG9rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI5NzYyNzMsImV4cCI6MjA3ODU1MjI3M30.k4vb_hR80dOuSxZJ2UAKitrSg1TdTEjJXaAsQVbXzQQ";
-const options = {
-  method: "GET",
-  headers: {
-    apikey: key,
-  },
-};
+const endpoint = "https://kea-alt-del.dk/t7/api/products?limit=20";
 
-const data = await fetch(endpoint, options).then((res) => res.json());
+const data = await fetch(endpoint).then((res) => res.json());
 console.log(data);
 ---
 
